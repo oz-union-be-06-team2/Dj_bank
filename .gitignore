@@ -1,312 +1,312 @@
-# https://www.toptal.com/developers/gitignore/api/macos,django,venv,python에서 생성됨
-# https://www.toptal.com/developers/gitignore?templates=macos,django,venv,python에서 편집
+# Created by https://www.toptal.com/developers/gitignore/api/macos,python,django,venv
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,django,venv
 
-### 장고 ###
-*.통나무
-*.냄비
+### Django ###
+*.log
+*.pot
 *.pyc
-__파이캐시__/
-로컬 설정.py
+__pycache__/
+local_settings.py
 db.sqlite3
-db.sqlite3-저널
-메디아
+db.sqlite3-journal
+media
 
-# 빌드 프로세스에 collectstatic 실행이 포함되어 있는 경우 staticfiles/를 포함할 필요가 없거나 포함하지 않으려 할 것입니다.
-# Git 저장소에 있습니다. 다음 줄을 적절히 업데이트하고 주석 처리를 제거합니다.
-# <django 프로젝트 이름>/staticfiles/
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
 
-### Django.Python 스택 ###
-# 바이트 컴파일 / 최적화 / DLL 파일
-*.py[대금업자]
-*$py.클래스
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
 
-# C 확장
-*.그래서
+# C extensions
+*.so
 
-# 유통/포장
-.파이썬
-짓다/
-개발-계란/
-거리/
-다운로드/
-계란/
-.계란/
-라이브러리/
-라이브러리64/
-부분품/
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
 sdist/
 var/
-바퀴/
-공유/파이썬-휠/
-*.계란정보/
-.설치됨.cfg
-*.계란
-명백한
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # PyInstaller
-# 일반적으로 이러한 파일은 템플릿의 Python 스크립트로 작성됩니다.
-# PyInstaller가 exe를 빌드하기 전에, 날짜/기타 정보를 삽입합니다.
-*.명백한
-*.투기
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# 설치 프로그램 로그
+# Installer logs
 pip-log.txt
-pip-이-디렉토리-삭제.txt
+pip-delete-this-directory.txt
 
-# 단위 테스트 / 커버리지 보고서
+# Unit test / coverage reports
 htmlcov/
-.톡스/
-.녹스/
-.적용 범위
-.적용 범위.*
-.은닉처
-코테스트.xml
-적용범위.xml
-*.씌우다
-*.py,커버
-.가설/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
 .pytest_cache/
-씌우다/
+cover/
 
-# 번역
-*.모
+# Translations
+*.mo
 
-# Django 관련 내용:
+# Django stuff:
 
-# 플라스크 관련:
-사례/
-.webassets-캐시
+# Flask stuff:
+instance/
+.webassets-cache
 
-# 스크래피 자료:
-.스크래피
+# Scrapy stuff:
+.scrapy
 
-# 스핑크스 문서
-문서/_빌드/
+# Sphinx documentation
+docs/_build/
 
-# 파이빌더
+# PyBuilder
 .pybuilder/
-목표/
+target/
 
-# 주피터 노트북
-.ipynb_체크포인트
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# 아이파이썬
-프로필_기본/
+# IPython
+profile_default/
 ipython_config.py
 
 # pyenv
-# 라이브러리나 패키지의 경우 코드가 다음과 같으므로 이러한 파일을 무시할 수 있습니다.
-# 여러 환경에서 실행되도록 의도됨; 그렇지 않은 경우 다음을 체크인하세요.
-# .python 버전
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
-# 파이프엔브이
-# pypa/pipenv#598에 따르면 버전 제어에 Pipfile.lock을 포함하는 것이 좋습니다.
-# 그러나 협업의 경우 플랫폼별 종속성이나 종속성이 있는 경우
-# 크로스 플랫폼 지원이 없기 때문에 pipenv는 작동하지 않는 종속성을 설치하거나
-# 필요한 모든 종속성을 설치합니다.
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
 #Pipfile.lock
 
-#시
-# Pipfile.lock과 유사하게, 일반적으로 poetry.lock을 버전 제어에 포함하는 것이 좋습니다.
-# 이것은 특히 재현성을 보장하기 위해 바이너리 패키지에 권장되며 더 좋습니다.
-# 일반적으로 라이브러리에서는 무시됩니다.
-# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#시.잠금
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
 
-# PDM
-# Pipfile.lock과 유사하게, 일반적으로 버전 제어에 pdm.lock을 포함하는 것이 좋습니다.
-#pdm.잠금
-# pdm은 .pdm.toml에 프로젝트 전체 구성을 저장하지만 포함하지 않는 것이 좋습니다.
-# 버전 제어에서.
-# https://pdm.fming.dev/#use-with-ide
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
 
-# PEP 582; 예를 들어 github.com/David-OConnor/pyflow 및 github.com/pdm-project/pdm에서 사용됨
-__파이패키지__/
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
 
-# 셀러리 스터프
-셀러리비트-스케줄
-셀러리비트.pid
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
 
-# SageMath가 파싱한 파일
-*.세이지.파이
+# SageMath parsed files
+*.sage.py
 
-# 환경
+# Environments
 .env
 .venv
-환경/
+env/
 venv/
-환경/
-환경.bak/
+ENV/
+env.bak/
 venv.bak/
 
-# Spyder 프로젝트 설정
-.스파이더프로젝트
-.스파이프로젝트
+# Spyder project settings
+.spyderproject
+.spyproject
 
-# 로프 프로젝트 설정
-.로프프로젝트
+# Rope project settings
+.ropeproject
 
-# mkdocs 문서
-/대지
+# mkdocs documentation
+/site
 
-# 마이파이
+# mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Pyre 유형 검사기
+# Pyre type checker
 .pyre/
 
-# pytype 정적 유형 분석기
+# pytype static type analyzer
 .pytype/
 
-# Cython 디버그 심볼
+# Cython debug symbols
 cython_debug/
 
-# 파이참
-# JetBrains 특정 템플릿은 별도의 JetBrains.gitignore에서 유지 관리됩니다.
-# https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore에서 찾을 수 있습니다.
-# 그리고 글로벌 gitignore에 추가하거나 이 파일에 병합할 수 있습니다. 더 핵적인
-# 옵션(권장하지 않음) 다음의 주석 처리를 제거하면 idea 폴더 전체를 무시할 수 있습니다.
-#.아이디어/
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
 
-### 맥 OS ###
-# 일반적인
-.DS_스토어
-.애플더블
-.LS오버라이드
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# 아이콘은 두 개의 \r로 끝나야 합니다.
-상
+# Icon must end with two \r
+Icon
 
 
-# 썸네일
+# Thumbnails
 ._*
 
-# 볼륨 루트에 나타날 수 있는 파일
-.문서 수정-V100
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
 .fseventsd
-.스포트라이트-V100
-.임시품목
-.쓰레기
-.볼륨아이콘.icns
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-# 원격 AFP 공유에 잠재적으로 생성될 수 있는 디렉토리
-.애플DB
-.애플데스크톱
-네트워크 휴지통 폴더
-임시 아이템
-.ap디스크
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-### macOS 패치 ###
-# iCloud에서 생성된 파일
-*.아이클라우드
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
-### 파이썬 ###
-# 바이트 컴파일 / 최적화 / DLL 파일
+### Python ###
+# Byte-compiled / optimized / DLL files
 
-# C 확장
+# C extensions
 
-# 유통/포장
+# Distribution / packaging
 
 # PyInstaller
-# 일반적으로 이러한 파일은 템플릿의 Python 스크립트로 작성됩니다.
-# PyInstaller가 exe를 빌드하기 전에, 날짜/기타 정보를 삽입합니다.
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 
-# 설치 프로그램 로그
+# Installer logs
 
-# 단위 테스트 / 커버리지 보고서
+# Unit test / coverage reports
 
-# 번역
+# Translations
 
-# Django 관련 내용:
+# Django stuff:
 
-# 플라스크 관련:
+# Flask stuff:
 
-# 스크래피 자료:
+# Scrapy stuff:
 
-# 스핑크스 문서
+# Sphinx documentation
 
-# 파이빌더
+# PyBuilder
 
-# 주피터 노트북
+# Jupyter Notebook
 
-# 아이파이썬
+# IPython
 
 # pyenv
-# 라이브러리나 패키지의 경우 코드가 다음과 같으므로 이러한 파일을 무시할 수 있습니다.
-# 여러 환경에서 실행되도록 의도됨; 그렇지 않은 경우 다음을 체크인하세요.
-# .python 버전
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
-# 파이프엔브이
-# pypa/pipenv#598에 따르면 버전 제어에 Pipfile.lock을 포함하는 것이 좋습니다.
-# 그러나 협업의 경우 플랫폼별 종속성이나 종속성이 있는 경우
-# 크로스 플랫폼 지원이 없기 때문에 pipenv는 작동하지 않는 종속성을 설치하거나
-# 필요한 모든 종속성을 설치합니다.
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
 
-#시
-# Pipfile.lock과 유사하게, 일반적으로 poetry.lock을 버전 제어에 포함하는 것이 좋습니다.
-# 이것은 특히 재현성을 보장하기 위해 바이너리 패키지에 권장되며 더 좋습니다.
-# 일반적으로 라이브러리에서는 무시됩니다.
-# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 
-# PDM
-# Pipfile.lock과 유사하게, 일반적으로 버전 제어에 pdm.lock을 포함하는 것이 좋습니다.
-# pdm은 .pdm.toml에 프로젝트 전체 구성을 저장하지만 포함하지 않는 것이 좋습니다.
-# 버전 제어에서.
-# https://pdm.fming.dev/#use-with-ide
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
 
-# PEP 582; 예를 들어 github.com/David-OConnor/pyflow 및 github.com/pdm-project/pdm에서 사용됨
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 
-# 셀러리 스터프
+# Celery stuff
 
-# SageMath가 파싱한 파일
+# SageMath parsed files
 
-# 환경
+# Environments
 
-# Spyder 프로젝트 설정
+# Spyder project settings
 
-# 로프 프로젝트 설정
+# Rope project settings
 
-# mkdocs 문서
+# mkdocs documentation
 
-# 마이파이
+# mypy
 
-# Pyre 유형 검사기
+# Pyre type checker
 
-# pytype 정적 유형 분석기
+# pytype static type analyzer
 
-# Cython 디버그 심볼
+# Cython debug symbols
 
-# 파이참
-# JetBrains 특정 템플릿은 별도의 JetBrains.gitignore에서 유지 관리됩니다.
-# https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore에서 찾을 수 있습니다.
-# 그리고 글로벌 gitignore에 추가하거나 이 파일에 병합할 수 있습니다. 더 핵적인
-# 옵션(권장하지 않음) 다음의 주석 처리를 제거하면 idea 폴더 전체를 무시할 수 있습니다.
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 
-### 파이썬 패치 ###
-# Poetry 로컬 구성 파일 - https://python-poetry.org/docs/configuration/#local-configuration
-시.toml
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
 
-# 러프
-.러프캐시/
+# ruff
+.ruff_cache/
 
-# LSP 구성 파일
+# LSP config files
 pyrightconfig.json
 
-### 벤브 ###
-# 가상환경
+### venv ###
+# Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
-[비비]인
-[Ii]포함하다
-[리]이브
-[엘]아이비64
-[Ll]지역
-[Ss] 스크립트
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
 
-# https://www.toptal.com/developers/gitignore/api/macos,django,venv,python의 끝
+# End of https://www.toptal.com/developers/gitignore/api/macos,python,django,venv
 .idea/
