@@ -50,6 +50,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls.urls_prod"
+# python manage.py runserver --settings=config.settings.prod
 
 TEMPLATES = [
     {
