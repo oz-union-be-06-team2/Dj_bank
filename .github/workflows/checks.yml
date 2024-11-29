@@ -7,7 +7,7 @@ name: Code Quality Checks
 on:
 	push:
 		branches:
-			- main
+			- feature/san_base_setting
 	pull_request:
 
 jobs:
