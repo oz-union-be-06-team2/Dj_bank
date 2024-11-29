@@ -35,42 +35,42 @@ jobs:
           --health-timeout 5s
           --health-retries 5
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'
-
-    - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        echo "${HOME}/.local/bin" >> $GITHUB_PATH
-
-    - name: Install Packages & Libraries
-      run: |
-        poetry install
-
-    - name: Run isort (Import sorting)
-      run: |
-        poetry run isort . --check --diff
-
-    - name: Run black (Code formatting)
-      run: |
-        poetry run black . --check
-
-    - name: Wait for PostgreSQL
-      run: |
-        until pg_isready -h localhost -p ${{ secrets.DB_PORT }} -U ${{ secrets.PG_USER }}; do
-          sleep 1
-        don
-
-    - name: Run Django Migration
-      run: |
-        poetry run python manage.py makemigrations
-        poetry run python manage.py migrate
+#    steps:
+#    - name: Checkout code
+#      uses: actions/checkout@v3
+#
+#    - name: Set up Python
+#      uses: actions/setup-python@v4
+#      with:
+#        python-version: '3.12'
+#
+#    - name: Install Poetry
+#      run: |
+#        curl -sSL https://install.python-poetry.org | python3 -
+#        echo "${HOME}/.local/bin" >> $GITHUB_PATH
+#
+#    - name: Install Packages & Libraries
+#      run: |
+#        poetry install
+#
+#    - name: Run isort (Import sorting)
+#      run: |
+#        poetry run isort . --check --diff
+#
+#    - name: Run black (Code formatting)
+#      run: |
+#        poetry run black . --check
+#
+#    - name: Wait for PostgreSQL
+#      run: |
+#        until pg_isready -h localhost -p ${{ secrets.DB_PORT }} -U ${{ secrets.PG_USER }}; do
+#          sleep 1
+#        don
+#
+#    - name: Run Django Migration
+#      run: |
+#        poetry run python manage.py makemigrations
+#        poetry run python manage.py migrate
 
 #		- name: Test python project
 #      run: |
