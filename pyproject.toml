@@ -15,7 +15,15 @@ psycopg2 = "^2.9.10"
 
 [tool.poetry.group.dev.dependencies]
 drf-yasg = "^1.21.8"
+black = "^24.10.0"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
