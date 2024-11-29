@@ -15,10 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: test
-        echo ${{ secrets.PG_USER }}
-        echo ${{ secrets.PG_PASSWORD }}
-        echo ${{ secrets.PG_NAME }}
+      - name: Test
+        run: |
+          echo ${{ secrets.PG_USER }}
+          echo ${{ secrets.PG_PASSWORD }}
+          echo ${{ secrets.PG_NAME }}
 
     services:
       db:
