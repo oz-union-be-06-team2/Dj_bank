@@ -64,7 +64,7 @@ jobs:
 
     - name: Wait for PostgreSQL
       run: |
-        until pg_isready -h localhost -p ${{ secrets.DB_PORT }} -U ${{ secrets.PG_USER }}; do
+        until pg_isready -h localhost -p ${{ secrets.DB_PORT }} -U ${{ secrets.DB_USER }}; do
           sleep 1
         don
 
