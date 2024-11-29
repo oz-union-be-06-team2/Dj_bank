@@ -49,7 +49,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "config.urls.urls_dev"
+ROOT_URLCONF = "config.urls.urls_base"
+# python manage.py runserver --settings=config.settings.base
 
 TEMPLATES = [
     {

@@ -52,6 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls.urls_dev"
+# python manage.py runserver --settings=config.settings.dev
 
 TEMPLATES = [
     {
