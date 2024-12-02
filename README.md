@@ -1,8 +1,6 @@
-<detail>
+## Flow chart
+![FLOW_CHART](./img/flow_chart.png)
 
-<summary>ERD</summary>
-
-
+---
+## ERD
 ![ERD](./img/erd.png)
-
-</detail>
